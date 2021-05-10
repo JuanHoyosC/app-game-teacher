@@ -1,0 +1,9 @@
+export const types = {
+    LOGIN:'LOGIN',
+    LOGOUT: 'LOGUT',
+    RETURN_EQUAL_AUTH: 'RETURN_EQUAL_AUTH',
+    UPDATE_NAME: '[auth] UPDATE_NAME',
+    ADD_TASK: 'ADD_TASK',
+    RETURN_TASK: 'RETURN_TASK', 
+    DELETE_TASK: 'DELETE_TASK'
+};

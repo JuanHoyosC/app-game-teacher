@@ -1,0 +1,43 @@
+.btn-crear-curso, .btn-editar-curso {
+    background: var(--color-secundario);
+    color: #fff;
+    margin-left: 16px;
+    overflow: hidden;
+    height: 40px;
+    width: 150px;
+}
+
+.div-spinner {
+    overflow: hidden;
+}
+
+.btn-crear-curso .spinner-border, .btn-editar-curso .spinner-border {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.codigo-curso, .nombre-curso {
+    background: var(--color-secundario);
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.btn-crear-curso:hover, .btn-editar-curso:hover {
+    color: #fff;
+}
+
+.form-crear-curso input {
+    width: 200px;
+}
+
+.info-curso i {
+    cursor: pointer;
+}
+
+
+.info-curso span {
+    font-size: 16px;
+    overflow: hidden;
+}
