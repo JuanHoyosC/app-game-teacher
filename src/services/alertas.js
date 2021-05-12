@@ -139,8 +139,34 @@ export const alertaError = (mensaje) => {
     })
 }
 
-export const alertaFeliz = () => {
+export const alertaDone = (mensaje) => {
+    Swal.fire({
+        imageUrl: 'https://i.ibb.co/fG1k2dW/comprobar.png',
+        imageHeight: 100,
+        imageWidth: 100,
+        text: mensaje,
+        padding: '1em',
+        timerProgressBar: true,
+        showConfirmButton: false,
+        timer: 4000,
+        background: '#4a4e52',
+        backdrop: `rgba(0,0,0,0.1)`
+    })
+}
 
+export const alertaRegistro = (mensaje) => {
+    Swal.fire({
+        imageUrl: 'https://i.ibb.co/wJD2j1Z/register.png',
+        imageHeight: 100,
+        imageWidth: 100,
+        text: mensaje,
+        padding: '1em',
+        timerProgressBar: true,
+        showConfirmButton: false,
+        timer: 4000,
+        background: '#4a4e52',
+        backdrop: `rgba(0,0,0,0.1)`
+    })
 }
 
 export const alertaDefeat = (mensaje='', nivel, dificultad) => {

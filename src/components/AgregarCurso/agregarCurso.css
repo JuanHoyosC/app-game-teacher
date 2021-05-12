@@ -41,3 +41,14 @@
     font-size: 16px;
     overflow: hidden;
 }
+
+.info-curso {
+    height: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .info-curso {
+        height: 100px;
+    }
+    
+}

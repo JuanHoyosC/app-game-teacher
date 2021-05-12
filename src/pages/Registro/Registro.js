@@ -7,9 +7,9 @@ import { useRegistro } from '../../hooks/useRegistro';
 
 export const Registro = () => {
 
-    const { form, handleInputChange } = useForm({ correo: '', password: '', nombre: '', apellidos: '', foto: '' });
+    const { form, handleInputChange, handleReset } = useForm({ correo: '', password: '', nombre: '', apellidos: '', foto: '' });
     const { correo, password, nombre, apellidos } = form;
-    const [handleSubmit, loading] = useRegistro({ form });
+    const [handleSubmit, loading] = useRegistro( form, handleReset );
 
     const handleUpload = (e) => {
         const file = e.target.files[0];

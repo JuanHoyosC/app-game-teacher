@@ -21,7 +21,7 @@ export const Mision = () => {
             <p className="mb-5">{ tarea.comentario }</p>
             <h5 className="mb-5">Estudiantes: { tarea?.estudiantes?.length } </h5>
             {
-                tarea.estudiantes ? 
+                tarea.estudiantes?.length === 0 ? 
                 <div className="mt-5">
                 <img src="https://i.ibb.co/mDZ2347/student.png" alt="no student" className="img-tarea mb-3" />
                 <h3 className="text-center">Ningun estudiante ha tomado está misión</h3>

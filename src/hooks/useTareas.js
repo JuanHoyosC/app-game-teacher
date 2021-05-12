@@ -1,4 +1,4 @@
-import { alertas, alertaWarning } from "../services/alertas";
+import { alertaDone, alertas, alertaWarning } from "../services/alertas";
 import { URL_BACKEND } from "../URL_BACKEND";
 
 export const useTareas = (form, fileA, curso_id, handleReset) => {
@@ -11,7 +11,7 @@ export const useTareas = (form, fileA, curso_id, handleReset) => {
 
 
         if(!curso_id){
-            alertaWarning('NO hay creado un curso');
+            alertaWarning('No hay creado un curso');
             return ;
         }
 
@@ -24,6 +24,7 @@ export const useTareas = (form, fileA, curso_id, handleReset) => {
             } else {
                 await enviar({ id_curso: curso_id });
             }
+            alertaDone('Tarea creada con exito');
             handleReset(e);
         } else {
             alertas('Debe llenar todos los campos obligatorios');

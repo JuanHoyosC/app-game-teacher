@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { alertas, alertaWarning } from '../services/alertas';
+import { alertaRegistro, alertas, alertaWarning } from '../services/alertas';
 import { URL_BACKEND } from '../URL_BACKEND';
 
-export const useRegistro = ({ form }) => {
+export const useRegistro = (form, handleReset ) => {
 
     const [loading, setLoading] = useState(false);
 
@@ -24,7 +24,9 @@ export const useRegistro = ({ form }) => {
             .then(res => res.json())
             .then(data => {
                 setLoading(false);
-                if(!data.continuar) alertas(data.mensaje);
+                if(!data.continuar) {alertas(data.mensaje); return ;}
+                handleReset( e );
+                alertaRegistro('Usuario registrado con exito');
             })
     }
 
@@ -37,6 +39,7 @@ export const useRegistro = ({ form }) => {
     }
 
     const verificar = () => {
+        console.log(form)
         const { correo, password, nombre, apellidos, foto } = form;
         if(correo.length < 5 ) return [false, 'El correo es invalido' ];
         if(password < 6 ) return [false, 'La contraseña es muy corta'];

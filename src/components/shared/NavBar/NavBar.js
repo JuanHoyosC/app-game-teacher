@@ -12,7 +12,7 @@ export const NavBar = () => {
                     <div className="d-flex" id="navbarNav">
                         <ul className="navbar-nav d-flex flex-row text-white">
                             <li className="nav-item" activeclassname="active" >
-                                <NavLink exact className="nav-link" to="/">Dashboard</NavLink>
+                                <NavLink exact className="nav-link" to="/">Home</NavLink>
                             </li>
 
                             <li className="nav-item" activeclassname="active" >

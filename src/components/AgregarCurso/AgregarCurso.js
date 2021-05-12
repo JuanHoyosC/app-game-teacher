@@ -32,8 +32,8 @@ export const AgregarCurso = () => {
                     </button>
                 </form>
                 :
-                <div className="d-flex justify-content-between info-curso">
-                    <span className="d-flex align-items-center nombre-curso">{curso_name} <i className="fas ms-2 fa-edit" data-bs-toggle="modal" data-bs-target="#modalEditar"></i></span>
+                <div className="d-md-flex justify-content-between info-curso">
+                    <span className="d-flex mb-3 align-items-center nombre-curso">{curso_name} <i className="fas ms-2 fa-edit" data-bs-toggle="modal" data-bs-target="#modalEditar"></i></span>
                     <span className="codigo-curso">Id: {curso_id}</span>
                 </div>
             }

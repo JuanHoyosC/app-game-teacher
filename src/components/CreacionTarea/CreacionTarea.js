@@ -15,13 +15,13 @@ export const CreacionTarea = () => {
         <form className="form-tareas" autoComplete="off" onSubmit={handleAddTarea}>
             <p className="nueva-tarea text-center">CREAR UNA NUEVA TAREA</p>
             <div className="row">
-                <div className="col-6 mb-3">
+                <div className="col-md-6 mb-3">
                     <label htmlFor="tituloTarea" className="form-label">TITULO DE LA TAREA</label>
                     <input className="form-control" type="text" id="tituloTarea" name="titulo" value={titulo}
                         onChange={handleInputChange} required />
                 </div>
 
-                <div className="col-6 mb-3">
+                <div className="col-md-6 mb-3">
                     <label htmlFor="puntos" className="form-label">PUNTAJE</label>
                     <input className="form-control" type="number" id="puntos"
                         name="puntaje" value={puntaje} min="1" max="5"
@@ -35,13 +35,13 @@ export const CreacionTarea = () => {
             </div>
 
             <div className="row">
-                <div className="col-6 mb-3">
+                <div className="col-md-6 mb-3">
                     <label htmlFor="fechaFin" className="form-label">DIA DE LA ENTREGA</label>
                     <input type="date" id="fechaFIn" className="form-control" name="fecha" value={fecha}
                         onChange={handleInputChange} required />
                 </div>
 
-                <div className="col-6 mb-3">
+                <div className="col-md-6 mb-3">
                     <label htmlFor="fechaFin" className="form-label">SUBIR ARCHIVO (OPCIONAL)</label>
                     <label htmlFor="archivo" className="archivo-label">
                         <input id="archivo" type="file"
