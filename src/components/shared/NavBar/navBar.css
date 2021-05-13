@@ -40,13 +40,3 @@
     font-size: 20px;
 }
 
-@media screen and (max-width: 600px){ 
-    .nav-game .navbar-nav{
-        display: none !important;
-    }
-
-    .nav-game .container {
-        justify-content: space-between !important;
-    }
-
-}

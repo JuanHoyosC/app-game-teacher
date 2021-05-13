@@ -13,6 +13,7 @@ export const MenuLateral = () => {
     const [picture, setPicture] = useState('')
 
     useEffect(() => {
+        
         getPicture(foto).then(url => setPicture(url));
     }, [foto])
 
