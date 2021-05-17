@@ -23,10 +23,11 @@ export const Registro = () => {
             <form className="form-registro p-5 px-3" autoComplete="off" onSubmit={handleSubmit}>
                 <h5 className="text-ingresar mb-3 text-white text-center">Registrarse</h5>
 
-                <label for="imagen-perfil" className="label-imagen mx-auto mb-3">
+                <label for="imagen-perfil" className="label-imagen mx-auto">
                     <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" onChange={handleUpload} id="imagen-perfil" />
                     <img src="https://i.ibb.co/BgmCw0c/teacher.png" alt="imagen_perfil" id="img-perfil" />
                 </label>
+                <small className="text-white text-center mb-3 mx-auto d-block">Clic para cambiar la foto</small>
 
                 <div className="form-floating mb-3">
                     <input type="email" className="form-control" value={correo} name="correo"
