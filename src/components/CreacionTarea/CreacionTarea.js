@@ -56,7 +56,7 @@ export const CreacionTarea = () => {
 
             <div className="d-flex div-btn">
                 <button className="btn btn-limpiar" onClick={handleReset}>LIMPIAR CAMPOS</button>
-                <button className="btn btn-enviar" type="suubmit">CREAR TAREA</button>
+                <button className="btn btn-enviar" type="submit">CREAR TAREA</button>
             </div>
         </form>
     )
